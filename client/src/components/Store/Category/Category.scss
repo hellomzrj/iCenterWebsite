@@ -1,0 +1,53 @@
+@import "../../../css-config/mixins.scss";
+
+.shop-by-store-category {
+
+    text-align: center;
+
+    h1 {
+        font-size: 3-store0px;
+        margin: 40px 0;
+        @include md {
+            font-size: 50px;
+        }
+    }
+    
+
+
+    @include md {
+        margin: 50px auto;
+    }
+
+    .categories {
+        display: flex;
+        flex-flow: wrap;
+
+        @include md {
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+        .category {
+            width: calc(50% - 15px);
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+
+            @include md {
+                width: calc(25% - 25px);
+            }
+
+            img {
+                width: 100%;
+                display: block;
+                transition: all ease 0.3s;
+                object-fit: cover;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+
+    }
+}

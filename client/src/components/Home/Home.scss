@@ -1,0 +1,22 @@
+@import "../../css-config/mixins.scss";
+
+.main-content {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    @include md {
+        max-width: 1200px;
+    }
+    .layout {
+        .intro {
+            font-size: 14px;
+            margin: 25px 0;
+            text-align: center;
+            @include md {
+                font-size: 16px;
+                margin: 40px;
+            }
+        }
+        
+    }
+
+}

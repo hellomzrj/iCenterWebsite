@@ -1,0 +1,148 @@
+@import "../../css-config/mixins.scss";
+
+.iservice-container {
+    margin: 20px 10px;
+    .layout {
+        max-width: 1200px;
+        margin: 0 auto;
+        .service-intro-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            .service-logo {
+                width: 320px;
+                margin: 30px auto;
+                @include md {
+                    width: 500px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            h1 {
+                font-size: 16px;
+                text-align: center;
+                @include md {
+                    font-size: 22px;
+                    line-height: 1.5;
+                    margin: 0 30px;
+                }
+            }
+            .asp-logo{
+                width: 260px;
+                margin: 20px 0;
+                @include md {
+                    width: 320px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+        .services-section {
+            text-align: center;
+            h2 {
+                font-size: 32px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                @include md {
+                    font-size: 40px;
+                }
+            }
+            .service {
+                .service-title {
+                    font-size: 24px;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    @include md {
+                        font-size: 36px;
+                        margin-top: 60px;
+                        margin-bottom: 30px;
+                    }
+                }
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 16px;
+                    padding: 4px 0;
+                    @include md {
+                        font-size: 18px;
+                    }
+                }
+                .service-name {
+                    font-weight: 700;
+                }
+            }
+            .quick-tips {
+                
+                h2 {
+                    font-size: 22px;
+                    margin: 15px 0;
+                    padding-top: 20px;
+                    line-height: 1;
+                    color: #F37B32;
+                    @include md {
+                        font-size: 28px;
+                    }
+                }
+                :nth-child(2){
+                    color: #333;
+                    padding: 10px 0;
+                }
+                span {
+                    display: flex;
+                    font-size: 18px;
+                    padding: 3px 0;
+                    color: cornflowerblue;
+                    flex-direction: column;
+                }
+            }
+        }
+        .more-services-section {
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: center;
+            .service {
+                margin-bottom: 40px;
+                .service-title {
+                    font-size: 24px;
+                    margin: 20px 0;
+                    @include md {
+                        font-size: 36px;
+                    }
+                }
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 14px;
+                    padding: 4px 0;
+                    @include md {
+                        font-size: 18px;
+                    }
+                }
+                .service-name {
+                    font-weight: 700;
+                }
+            }
+        }
+        span {
+            display: flex;
+            justify-content: center;
+            font-size: 13px;
+            line-height: 1.1;
+            margin: 0 50px;
+            text-align: center;
+            @include md {
+                margin: 0 100px;
+            }
+        }
+    }
+}
